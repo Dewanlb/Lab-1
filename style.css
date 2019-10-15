@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans";
+  background-color: #f9fafc;
+  margin: 5%;
+}
+ul {
+  position: relative;
+  top: -28px;
+  padding: 0%;
+  color: #69696a;
+  list-style: none;
+  height: 34px;
+}
+button {
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #000;
+}
+.line {
+  border-left: 4px solid #69696a;
+}
+p {
+  margin: 10px;
+  color: #69696a;
+}
+h3 {
+  position: relative;
+  top: 15px;
+}
+.scroll {
+  position: relative;
+  top: 15px;
+}
