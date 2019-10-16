@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 body {
   font-family: "Open Sans";
   background-color: #f9fafc;
   margin: 5%;
 }
+
 ul {
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: -28px;
   padding: 0%;
@@ -12,7 +14,17 @@ ul {
   list-style: none;
   height: 34px;
 }
-button {
+a {
+  display: block;
+  padding: 5px;
+  flex-direction: column;
+  text-decoration: none;
+  color: #69696a;
+}
+.button {
+  text-align: center;
+  border-style: solid;
+  top: 25px;
   padding: 10px;
   position: relative;
   left: 50%;
@@ -37,4 +49,7 @@ h3 {
 .scroll {
   position: relative;
   top: 15px;
+}
+h5 {
+  font-style: normal;
 }
