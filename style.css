@@ -22,13 +22,24 @@ a {
   color: #69696a;
 }
 .button {
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
+  top: 75px;
+  padding: 10px;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #000;
+}
+.button2 {
   text-align: center;
   border-style: solid;
   top: 25px;
   padding: 10px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   height: 100%;
   width: 100%;
   border-radius: 20px;
@@ -43,6 +54,7 @@ p {
   color: #69696a;
 }
 h3 {
+  display: inline-block;
   position: relative;
   top: 15px;
 }
@@ -52,4 +64,84 @@ h3 {
 }
 h5 {
   font-style: normal;
+}
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  ul {
+    top: -55px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  h5 {
+    position: absolute;
+    top: -25px;
+  }
+  .button {
+    flex-direction: row;
+    top: auto;
+    padding: 5px;
+  }
+  h3 {
+    position: fixed;
+  }
+  .button {
+    width: fit-content;
+  }
+  .button2 {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 90%;
+    left: 45%;
+  }
+  p {
+    width: 50%;
+  }
+  h3 {
+    top: 10%;
+  }
+  .container {
+    display: flex;
+    width: 50%;
+    position: relative;
+    align-content: space-between;
+  }
+  .one {
+    border-radius: 80%;
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: rgba(247, 136, 167, 0.6);
+    right: 120px;
+    top: -30px;
+  }
+  .two {
+    border-radius: 80%;
+    position: absolute;
+    display: block;
+    height: 160px;
+    width: 160px;
+    background-color: rgba(247, 193, 162, 0.7);
+    top: 100px;
+    right: 60px;
+  }
+  .three {
+    border-radius: 80%;
+    position: absolute;
+    display: block;
+    height: 130px;
+    width: 130px;
+    background-color: rgba(207, 130, 213, 0.6);
+    right: 40px;
+    top: 20px;
+  }
 }
